@@ -1,0 +1,45 @@
+@import '../base/_fonts.scss';
+@import '../base/_palette.scss';
+
+.navbar{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	&__logo{
+		height: 80px;
+		margin-top: -30px;
+	}
+
+	&__links{
+		display: flex;
+	}
+
+	&__link{
+		margin-right: 15px;
+		& > a{
+			@extend %text;
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.navbar{
+		justify-content: flex-start;
+
+		&__links{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.navbar{
+		&__logo{
+			height: 60px;
+			margin-top: -25px;
+		}
+	}
+}
