@@ -1,0 +1,36 @@
+@import '../base/_fonts.scss';
+
+.header{
+	width: 100%;
+	height: 100vh;
+	background: pink;
+	padding: 25px;
+}
+
+.main{
+	width: 100%;
+}
+
+.insurance{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: gray;
+
+	&__title{
+		@extend %title;
+	}
+}
+
+.aliances{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: gray;
+
+	&__title{
+		@extend %title;
+	}
+}	

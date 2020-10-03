@@ -1,1 +1,5 @@
-@import 'layout/header';
+@import 'base/_reset.scss';
+
+@import 'components/_header-card.scss';
+
+@import 'layout/_home.scss';
