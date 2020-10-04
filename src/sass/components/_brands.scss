@@ -1,20 +1,46 @@
 @import '../base/_fonts.scss';
 @import '../base/_palette.scss';
 @import '../base/_shadows.scss';
+
+@keyframes brands-open{
+	from{
+		height: 450px;
+	}
+
+	to{
+		height: 600px;
+	}
+}
+
+@keyframes brands-close{
+	from{
+		height: 600px;
+	}
+
+	to{
+		height: 450px;
+	}
+}
+
+
 .brands{
 	position: relative;
+	height: 450px;
+	overflow: hidden;
+	&:hover{
+		animation: brands-open 2s ease-out forwards;
+	}
 
 	&__list{
 		margin-top: 50px;
-		height: 450px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		overflow: hidden;
 	}
 
 	&__item{
 		margin: 7px 7px;
+		width: 220px;
 	}
 
 	&__dropdown{
@@ -44,6 +70,56 @@
 		&:hover{
 			box-shadow: $z1;
 			transition: box-shadow .1s;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	@keyframes brands-open{
+		to{
+			height: 800px;
+		}
+	}
+
+	@keyframes brands-close{
+		from{
+			height: 800px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	@keyframes brands-open{
+		to{
+			height: 900px;
+		}
+	}
+
+	@keyframes brands-close{
+		from{
+			height: 900px;
+		}
+	}
+}
+
+@media screen and (max-width: 425px){
+	@keyframes brands-open{
+		to{
+			height: 800px;
+		}
+	}
+
+	@keyframes brands-close{
+		from{
+			height: 800px;
+		}
+	}
+
+	.brands{
+		&__item{
+			margin: 5px;
+			width: 100px;
 		}
 	}
 }
