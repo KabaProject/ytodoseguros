@@ -2,19 +2,20 @@
 @import '../base/_palette.scss';
 
 .ins-desc{
-	width: 1100px;
+	width: 100%;
+	max-width: 1150px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-
 	&__img{
 		width: 500px;
 	}
 
 	&__content{
 		max-width: 450px;
-		margin-left: 100px;
+		margin-left: 80px;
+		margin-right: 50px;
 	}
 
 	&__title{
@@ -43,4 +44,28 @@
 		}
 	}
 
+}
+
+@media screen and (max-width: 1024px){
+
+	.ins-desc{
+		&__content{
+			max-width: 400px;
+			margin-left: 40px;
+			margin-right: 30px;
+		}
+	}	
+}
+
+@media screen and (max-width: 768px){
+
+	.ins-desc{
+		&__content{
+			max-width: 650px;
+			margin: 0;
+		}
+		&__img{
+			display: none;
+		}
+	}	
 }
