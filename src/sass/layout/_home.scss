@@ -20,10 +20,25 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: gray;
+	padding: 80px 40px;
 
 	&__title{
 		@extend %title;
+		text-align: center;
+	}
+
+	&__tabs{
+		display: flex;
+		justify-content: center;
+		margin: 50px 0 100px 0;
+
+		& > *{
+			margin-right: 50px;
+		}
+
+		& > *:nth-last-child(1){
+			margin-right: 0px;
+		}
 	}
 }
 
@@ -38,3 +53,26 @@ body{
 		@extend %title;
 	}
 }	
+
+
+@media screen and (max-width: 768px){
+	.insurance{
+		&__tabs{
+			& > *{
+				margin-right: 30px;	
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px){
+	.insurance{
+		padding: 80px 30px;
+		&__tabs{
+			margin: 40px 0 50px 0;
+			& > *{
+				margin-right: 10px;	
+			}
+		}
+	}
+}
