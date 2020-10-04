@@ -27,9 +27,6 @@
 	position: relative;
 	height: 450px;
 	overflow: hidden;
-	&:hover{
-		animation: brands-open 2s ease-out forwards;
-	}
 
 	&__list{
 		margin-top: 50px;
