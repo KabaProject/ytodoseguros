@@ -1,0 +1,49 @@
+@import '../base/_fonts.scss';
+@import '../base/_palette.scss';
+@import '../base/_shadows.scss';
+.brands{
+	position: relative;
+
+	&__list{
+		margin-top: 50px;
+		height: 450px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	&__item{
+		margin: 7px 7px;
+	}
+
+	&__dropdown{
+		width: 100%;
+		height: 160px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		bottom: 0;
+		z-index: auto;
+		background-image: linear-gradient(rgba(242, 242, 242, 0), $gray 60%);
+	}
+
+	&__button{
+		padding: 6px 30px;
+		background-color: $primary;
+		color: $white;
+		border: none;
+		cursor: pointer;
+		box-shadow: $z0;
+		transition: box-shadow .1s;
+		@extend %subtitle;
+
+		&:hover{
+			box-shadow: $z1;
+			transition: box-shadow .1s;
+		}
+	}
+}
