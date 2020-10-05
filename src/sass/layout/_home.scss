@@ -48,7 +48,7 @@ body{
 	flex-direction: column;
 	align-items: center;
 	background: $gray;
-	padding: 80px 20px;
+	padding: 80px 20px 40px 20px;
 
 	&__title{
 		@extend %title;
@@ -64,8 +64,27 @@ body{
 	display: flex;
 	justify-content: center;
 	padding: 0 20px;
+	position: relative;
+
+	&__card{
+		position: absolute;
+		top: 50px;
+		z-index: 2;
+	}
 }
 
+.contact{
+	height: 1400px;
+	position: relative;
+	background-color: #949494;
+
+	&__shape{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+	}
+}
 
 @media screen and (max-width: 768px){
 	.insurance{
