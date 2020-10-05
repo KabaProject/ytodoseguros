@@ -76,13 +76,33 @@ body{
 .contact{
 	height: 1400px;
 	position: relative;
-	background-color: #949494;
+	background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=19.431113,-99.1576105&zoom=18&scale=2&size=1400x1200&maptype=hybrid&markers=color:red%7C19.4304707,-99.1574667&key=AIzaSyD5c4UPefqr8VjIvqkE3el0WZt4jEP6hgM); 	
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding: 20px;
 
 	&__shape{
-		width: 100%;
+		max-width: 100%;
 		position: absolute;
 		top: 0;
+		left: 0;
 		z-index: 1;
+	}
+
+	&__cards{
+		display: flex;
+		flex-direction: column;
+
+		& > *{
+			margin-bottom: 15px;
+		}
+
+		& > *:nth-last-child(1){
+			margin-bottom: 0px;
+		}
 	}
 }
 
