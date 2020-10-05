@@ -1,0 +1,75 @@
+@import '../base/_fonts.scss';
+@import '../base/_palette.scss';
+@import '../base/_shadows.scss';
+
+.cta-card{
+	height: 500px;
+	width: 1120px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	box-shadow: $z3;
+
+	&__image{
+		overflow: hidden;
+	}
+
+	&__img{
+		width: 100%;
+		height: 100%;	
+	}
+
+	&__content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 50px 50px 30px 50px;
+	}
+
+	&__info{
+		max-width: 450px;
+	}
+
+	&__title{
+		@extend %title;	
+	}
+
+	&__text{
+		@extend %subtitle;
+		margin-top: 15px;
+	}
+
+	&__button{
+		display: inline-block;
+		padding: 6px 30px;
+		background-color: $accent;
+		color: $white;
+		border: none;
+		cursor: pointer;
+		box-shadow: $z0;
+		transition: box-shadow .1s;
+		text-decoration: none;
+		margin-top: 20px;
+		@extend %subtitle;	
+
+		&:hover{
+			box-shadow: $z1;
+			transition: box-shadow .1s;
+		}
+	}
+
+	&__socials{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__brand{
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+
+	&__icon{
+		font-size: 1.5rem;
+	}
+
+}

@@ -1,19 +1,19 @@
 %header {
 	font-weight: 600;
 	font-size: 3rem;
-	line-height: 4.5rem;
+	line-height: calc(3rem * 1.5);
 }
 
 %title{
 	font-weight: 600;
 	font-size: 2.5rem;
-	line-height: calc(2.5rem * 1.5);
+	line-height: calc(2.5rem * 1.2);
 }
 
 %subtitle{
 	font-weight: 500;
 	font-size: 1.375rem;
-	line-height: 2.0625rem;
+	line-height: calc(1.375rem * 1.2);
 }
 
 %phrase{
