@@ -4,12 +4,13 @@
 
 .cta-card{
 	height: 500px;
-	width: 1120px;
+	max-width: 1120px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	box-shadow: $z3;
 
 	&__image{
+		height: 100%;
 		overflow: hidden;
 	}
 
@@ -70,6 +71,49 @@
 
 	&__icon{
 		font-size: 1.5rem;
+	}
+
+}
+
+
+@media screen and (max-width: 768px){
+	.cta-card{
+		&__content{
+			padding: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 425px){
+	.cta-card{
+		height: auto;
+		grid-template-columns: 1fr;
+
+		&__image{
+			height: 300px;
+			overflow: hidden;
+		}
+
+		&__content{
+			padding: 20px;
+		}
+
+		&__info{
+			margin-bottom: 50px;
+		}
+
+		&__text{
+			margin-top: 10px;
+		}
+
+		&__brand{
+			font-size: 1.125rem;
+			font-weight: 600;
+		}
+
+		&__icon{
+			font-size: 1.5rem;
+		}
 	}
 
 }
