@@ -3,6 +3,8 @@
 @import '../base/_shadows.scss';
 
 .contact-card{
+	width: fit-content;
+	max-width: 500px;
 	padding: 20px;
 	background-color: $white;
 	box-shadow: $z1;
@@ -14,6 +16,7 @@
 		"Logo Text";
 	column-gap: 10px;
 	row-gap: 5px;
+	align-items: start;
 
 	&__img{
 		grid-area: Logo;
@@ -38,6 +41,14 @@
 
 	&__number{
 		color: $primary;
-		text-decoration: none;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.contact-card{
+		width: 100%;
+		grid-template-columns: 40px 1fr;
 	}
 }
