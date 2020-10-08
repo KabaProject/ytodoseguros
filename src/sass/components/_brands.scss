@@ -42,16 +42,25 @@
 
 	&__dropdown{
 		width: 100%;
-		height: 160px;
+		height: 120px;
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		background-image: linear-gradient(to top, $gray 40%, rgba(0,0,0,0));
 
 		position: absolute;
 		bottom: 0;
 		z-index: auto;
-		background-image: linear-gradient(rgba(242, 242, 242, 0), $gray 60%);
+	}
+
+	&__shadow{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: $gray;
+		filter: blur(40px);
+		z-index: auto;
 	}
 
 	&__button{
@@ -62,6 +71,9 @@
 		cursor: pointer;
 		box-shadow: $z0;
 		transition: box-shadow .1s;
+		position: relative;
+		z-index: auto;
+		
 		@extend %subtitle;
 
 		&:hover{
