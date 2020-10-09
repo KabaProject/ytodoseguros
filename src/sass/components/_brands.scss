@@ -22,11 +22,34 @@
 	}
 }
 
+@keyframes brands-hide-shadow{
+	from{
+		opacity: 1;
+	}
+
+	to{
+		opacity: 0;
+	}
+}
+
+@keyframes brands-show-shadow{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
 
 .brands{
 	position: relative;
 	height: 450px;
 	overflow: hidden;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
 
 	&__list{
 		
@@ -61,6 +84,9 @@
 		background: $gray;
 		filter: blur(40px);
 		z-index: auto;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
 	}
 
 	&__button{
