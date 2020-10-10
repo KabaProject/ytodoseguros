@@ -38,13 +38,13 @@
 	cursor: pointer;
 
 	&:nth-child(1){
-		background-image: url(https://picsum.photos/270/300);
+		background-image: url('../img/vida.png');
 	}
 	&:nth-child(2){
-		background-image: url(https://picsum.photos/270/300);
+		background-image: url('../img/gastos.png');
 	}
 	&:nth-child(3){
-		background-image: url(https://picsum.photos/270/300);
+		background-image: url('../img/masivo.png');
 	}
 
 	&__shadow{

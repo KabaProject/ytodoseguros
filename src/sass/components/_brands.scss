@@ -4,21 +4,21 @@
 
 @keyframes brands-open{
 	from{
-		height: 450px;
+		height: 280px;
 	}
 
 	to{
-		height: 600px;
+		height: 570px;
 	}
 }
 
 @keyframes brands-close{
 	from{
-		height: 600px;
+		height: 570px;
 	}
 
 	to{
-		height: 450px;
+		height: 280px;
 	}
 }
 
@@ -45,7 +45,7 @@
 
 .brands{
 	position: relative;
-	height: 450px;
+	height: 280px;
 	overflow: hidden;
 	animation-duration: 1s;
 	animation-timing-function: ease-out;
@@ -59,8 +59,11 @@
 	}
 
 	&__item{
-		margin: 7px 7px;
-		width: 220px;
+		margin: 15px;
+		max-height: 70px; 
+		max-width: 300px;
+		filter: grayscale(100%);
+		opacity: 0.6;
 	}
 
 	&__dropdown{
@@ -112,13 +115,13 @@
 @media screen and (max-width: 1024px){
 	@keyframes brands-open{
 		to{
-			height: 800px;
+			height: 650px;
 		}
 	}
 
 	@keyframes brands-close{
 		from{
-			height: 800px;
+			height: 650px;
 		}
 	}
 
@@ -127,13 +130,13 @@
 @media screen and (max-width: 768px){
 	@keyframes brands-open{
 		to{
-			height: 900px;
+			height: 750px;
 		}
 	}
 
 	@keyframes brands-close{
 		from{
-			height: 900px;
+			height: 750px;
 		}
 	}
 }
@@ -141,20 +144,35 @@
 @media screen and (max-width: 425px){
 	@keyframes brands-open{
 		to{
-			height: 800px;
+			height: 750px;
 		}
 	}
 
 	@keyframes brands-close{
 		from{
-			height: 800px;
+			height: 750px;
 		}
 	}
 
 	.brands{
 		&__item{
-			margin: 5px;
-			width: 100px;
+			margin: 10px;
+			max-height: 50px; 
+			max-width: 200px;
+		}
+	}
+}
+
+@media screen and (max-width: 320px){
+	@keyframes brands-open{
+		to{
+			height: 870px;
+		}
+	}
+
+	@keyframes brands-close{
+		from{
+			height: 870px;
 		}
 	}
 }
