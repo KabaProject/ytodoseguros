@@ -42,6 +42,14 @@
 		margin-top: 15px;
 	}
 
+	&__buttons{
+		display: flex;
+
+		& > *:nth-child(1){
+			margin-right: 10px;
+		}
+	}
+
 	&__button{
 		display: inline-block;
 		padding: 6px 30px;
@@ -58,6 +66,18 @@
 		&:hover{
 			box-shadow: $z1;
 			transition: box-shadow .1s;
+		}
+
+		&--secondary{
+			display: inline-block;
+			padding: 6px 30px;
+			background-color: $white;
+			color: $accent;
+			border: 1px solid $accent;
+			cursor: pointer;
+			text-decoration: none;
+			margin-top: 20px;
+			@extend %subtitle;
 		}
 	}
 

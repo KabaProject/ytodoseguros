@@ -5,10 +5,10 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	&__logo{
-		height: 80px;
-		margin-top: -20px;
+		height: 40px;
 	}
 
 	&__links{
