@@ -1,0 +1,1123 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
+  vertical-align: baseline;
+  color: #1A1A1A;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .navbar__link > a, .header-card__phrase {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .navbar__link > a, .header-card__phrase {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+.header-card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: relative;
+  grid-template-rows: 90px 1fr 100px;
+  grid-template-areas: "Navbar" "Text";
+  box-shadow: 0px 8px 16px rgba(10, 10, 10, 0.5);
+}
+.header-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/confianza.png") center/cover no-repeat;
+  filter: brightness(30%);
+  z-index: auto;
+}
+.header-card__nav {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: auto;
+}
+.header-card__text {
+  grid-area: Text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: auto;
+}
+.header-card__title {
+  color: white;
+  text-align: center;
+}
+.header-card__phrase {
+  color: white;
+  text-align: center;
+}
+.header-card__scrolldown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header-card {
+    grid-template-rows: 60px 1fr 100px;
+  }
+  .header-card__nav {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-card::before {
+    background: url("../img/familyportrait.png") center/cover no-repeat;
+    filter: brightness(30%);
+  }
+  .header-card__text {
+    padding: 0 20px;
+  }
+}
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .navbar__link > a, .header-card__phrase {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .navbar__link > a, .header-card__phrase {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  height: 40px;
+}
+.navbar__links {
+  display: flex;
+}
+.navbar__link {
+  margin-right: 15px;
+}
+.navbar__link > a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+  .navbar__links {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar__logo {
+    height: 60px;
+    margin-top: -10px;
+  }
+}
+@keyframes getdown {
+  0% {
+    margin-top: 30px;
+    opacity: 1;
+  }
+  100% {
+    margin-top: -30px;
+    opacity: 0.2;
+  }
+}
+.scrolldown {
+  width: 40px;
+  height: 70px;
+  border: solid 5px white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scrolldown__ball {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  animation: getdown 0.8s ease alternate infinite;
+}
+
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .header-card__phrase, .navbar__link > a {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .header-card__phrase, .navbar__link > a {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+@keyframes tab-normal-active {
+  from {
+    box-shadow: none;
+    transform: scale(1);
+  }
+  to {
+    box-shadow: 0px 8px 16px rgba(10, 10, 10, 0.5);
+    transform: scale(1.1);
+  }
+}
+@keyframes tab-active-normal {
+  from {
+    box-shadow: 0px 8px 16px rgba(10, 10, 10, 0.5);
+    transform: scale(1.1);
+  }
+  to {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+.tab {
+  width: 270px;
+  height: 300px;
+  background: center/cover;
+  position: relative;
+  animation-name: none;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.tab:nth-child(1) {
+  background-image: url("../img/vida.png");
+}
+.tab:nth-child(2) {
+  background-image: url("../img/gastos.png");
+}
+.tab:nth-child(3) {
+  background-image: url("../img/masivo.png");
+}
+.tab__shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 26, 26, 0.6);
+  position: absolute;
+  z-index: auto;
+}
+.tab__content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tab__icon {
+  width: 80px;
+  height: 80px;
+}
+.tab__label {
+  color: white;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .tab {
+    width: 198px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .tab {
+    width: 126px;
+    height: 140px;
+  }
+  .tab__icon {
+    width: 60px;
+    height: 60px;
+  }
+  .tab__label {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .tab {
+    width: 90px;
+    height: 100px;
+  }
+}
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .header-card__phrase, .navbar__link > a {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .contact-card__text, .contact-card__title, .ins-desc__example, .ins-desc__text, .header-card__phrase, .navbar__link > a {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+.ins-desc {
+  width: 100%;
+  max-width: 1150px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.ins-desc__img {
+  display: block;
+  width: 500px;
+}
+.ins-desc__content {
+  display: block;
+  max-width: 450px;
+  margin-left: 80px;
+  margin-right: 50px;
+}
+.ins-desc__text {
+  margin-top: 10px;
+}
+.ins-desc__examples {
+  margin-top: 15px;
+}
+.ins-desc__example {
+  list-style: circle outside;
+  margin: 0 0 10px 20px;
+}
+.ins-desc__example:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+.ins-desc__example > b {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .ins-desc__content {
+    max-width: 400px;
+    margin-left: 40px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ins-desc__content {
+    max-width: 650px;
+    margin: 0;
+  }
+  .ins-desc__img {
+    display: none;
+  }
+}
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.contact-card__text, .contact-card__title, .header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .cta-card__button--secondary, .cta-card__button, .cta-card__text, .brands__button, .tab__label {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .contact-card__text, .contact-card__title, .header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+@keyframes brands-open {
+  from {
+    height: 280px;
+  }
+  to {
+    height: 570px;
+  }
+}
+@keyframes brands-close {
+  from {
+    height: 570px;
+  }
+  to {
+    height: 280px;
+  }
+}
+@keyframes brands-hide-shadow {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes brands-show-shadow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.brands {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.brands__item {
+  margin: 15px;
+  max-height: 70px;
+  max-width: 300px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.brands__dropdown {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #F2F2F2 40%, rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  z-index: auto;
+}
+.brands__shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #F2F2F2;
+  filter: blur(40px);
+  z-index: auto;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.brands__button {
+  padding: 6px 30px;
+  background-color: #2D3D4E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(10, 10, 10, 0.5);
+  transition: box-shadow 0.1s;
+  position: relative;
+  z-index: auto;
+}
+.brands__button:hover {
+  box-shadow: 0px 2px 4px rgba(10, 10, 10, 0.5);
+  transition: box-shadow 0.1s;
+}
+
+@media screen and (max-width: 1024px) {
+  @keyframes brands-open {
+    to {
+      height: 650px;
+    }
+  }
+  @keyframes brands-close {
+    from {
+      height: 650px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  @keyframes brands-open {
+    to {
+      height: 750px;
+    }
+  }
+  @keyframes brands-close {
+    from {
+      height: 750px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  @keyframes brands-open {
+    to {
+      height: 750px;
+    }
+  }
+  @keyframes brands-close {
+    from {
+      height: 750px;
+    }
+  }
+  .brands__item {
+    margin: 10px;
+    max-height: 50px;
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  @keyframes brands-open {
+    to {
+      height: 870px;
+    }
+  }
+  @keyframes brands-close {
+    from {
+      height: 870px;
+    }
+  }
+}
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.cta-card__button--secondary, .cta-card__button, .cta-card__text, .tab__label, .brands__button {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.contact-card__text, .contact-card__title, .header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .cta-card__title, .ins-desc__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .cta-card__button--secondary, .cta-card__button, .cta-card__text, .tab__label, .brands__button {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .contact-card__text, .contact-card__title, .header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+.cta-card {
+  height: 500px;
+  max-width: 1120px;
+  display: grid;
+  margin: 0px 10px;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 8px 16px rgba(10, 10, 10, 0.5);
+  background-color: white;
+}
+.cta-card__image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.cta-card__img {
+  width: 100%;
+}
+.cta-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 50px 30px 50px;
+}
+.cta-card__info {
+  max-width: 450px;
+}
+.cta-card__text {
+  margin-top: 15px;
+}
+.cta-card__buttons {
+  display: flex;
+}
+.cta-card__buttons > *:nth-child(1) {
+  margin-right: 10px;
+}
+.cta-card__button {
+  display: inline-block;
+  padding: 6px 30px;
+  background-color: #FDA400;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(10, 10, 10, 0.5);
+  transition: box-shadow 0.1s;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.cta-card__button:hover {
+  box-shadow: 0px 2px 4px rgba(10, 10, 10, 0.5);
+  transition: box-shadow 0.1s;
+}
+.cta-card__button--secondary {
+  display: inline-block;
+  padding: 6px 30px;
+  background-color: white;
+  color: #FDA400;
+  border: 1px solid #FDA400;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.cta-card__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta-card__brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.cta-card__icon {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cta-card__content {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .cta-card {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  .cta-card__image {
+    height: 300px;
+    overflow: hidden;
+  }
+  .cta-card__content {
+    padding: 20px;
+  }
+  .cta-card__info {
+    margin-bottom: 50px;
+  }
+  .cta-card__text {
+    margin-top: 10px;
+  }
+  .cta-card__brand {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  .cta-card__icon {
+    font-size: 1.5rem;
+  }
+}
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .ins-desc__title, .cta-card__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.tab__label, .brands__button, .cta-card__text, .cta-card__button, .cta-card__button--secondary {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.contact-card__text, .contact-card__title, .header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .ins-desc__title, .cta-card__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .tab__label, .brands__button, .cta-card__text, .cta-card__button, .cta-card__button--secondary {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .contact-card__text, .contact-card__title, .header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+.contact-card {
+  width: fit-content;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(10, 10, 10, 0.5);
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "Logo Title" "Logo Text";
+  column-gap: 10px;
+  row-gap: 5px;
+  align-items: start;
+}
+.contact-card__img {
+  grid-area: Logo;
+  display: flex;
+  align-items: center;
+}
+.contact-card__icon {
+  font-size: 40px;
+}
+.contact-card__title {
+  font-weight: 600 !important;
+  grid-area: Title;
+}
+.contact-card__text {
+  grid-area: Text;
+}
+.contact-card__number {
+  color: #2D3D4E;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .contact-card {
+    width: 100%;
+    grid-template-columns: 40px 1fr;
+  }
+}
+.header-card__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: calc(3rem * 1.5);
+}
+
+.aliances__title, .insurance__title, .ins-desc__title, .cta-card__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+}
+
+.tab__label, .brands__button, .cta-card__text, .cta-card__button, .cta-card__button--secondary {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.2);
+}
+
+.header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example, .contact-card__title, .contact-card__text {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.2);
+}
+
+@media screen and (max-width: 425px) {
+  .header-card__title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+  }
+
+  .aliances__title, .insurance__title, .ins-desc__title, .cta-card__title {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+  }
+
+  .tab__label, .brands__button, .cta-card__text, .cta-card__button, .cta-card__button--secondary {
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.2);
+  }
+
+  .header-card__phrase, .navbar__link > a, .ins-desc__text, .ins-desc__example, .contact-card__title, .contact-card__text {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.2);
+  }
+}
+body {
+  background: white;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  max-height: 1000px;
+  padding: 10px;
+}
+
+.main {
+  width: 100%;
+}
+
+.insurance {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 40px;
+}
+.insurance__title {
+  text-align: center;
+}
+.insurance__tabs {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 100px 0;
+}
+.insurance__tabs > * {
+  margin-right: 50px;
+}
+.insurance__tabs > *:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.aliances {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F2F2F2;
+  padding: 80px 0 40px 0;
+}
+.aliances__title {
+  text-align: center;
+}
+.aliances__content {
+  margin-top: 40px;
+}
+
+.cta {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: #F2F2F2;
+}
+.cta__card {
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+}
+
+.contact {
+  height: 1400px;
+  position: relative;
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?scale=2&maptype=hybrid&markers=color:red%7C19.4304707,-99.1574667&center=19.431113,-99.1576105&zoom=18&size=1200x1400&key=AIzaSyD5c4UPefqr8VjIvqkE3el0WZt4jEP6hgM");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
+}
+.contact__shape {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  vertical-align: top;
+}
+.contact__cards {
+  display: flex;
+  flex-direction: column;
+}
+.contact__cards > * {
+  margin-bottom: 15px;
+}
+.contact__cards > *:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .insurance__tabs > * {
+    margin-right: 30px;
+  }
+
+  .contact__shape {
+    height: 370px;
+  }
+
+  .cta {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .insurance {
+    padding: 80px 30px;
+  }
+  .insurance__tabs {
+    margin: 40px 0 50px 0;
+  }
+  .insurance__tabs > * {
+    margin-right: 10px;
+  }
+
+  .contact {
+    background-image: url("https://maps.googleapis.com/maps/api/staticmap?scale=2&maptype=hybrid&markers=color:red%7C19.4304707,-99.1574667&center=19.431113,-99.1576105&zoom=17&size=425x1200&key=AIzaSyD5c4UPefqr8VjIvqkE3el0WZt4jEP6hgM");
+  }
+  .contact__shape {
+    height: 370px;
+  }
+  .contact__cards {
+    width: 100%;
+  }
+
+  .aliances {
+    padding: 80px 0 10px 0;
+  }
+  .aliances__content {
+    margin-top: 2 0px;
+  }
+
+  .cta {
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,0 @@
-
-$map-url: "https://maps.googleapis.com/maps/api/staticmap?scale=2&maptype=hybrid&markers=color:red%7C19.4304707,-99.1574667&";
-$key:"&key=AIzaSyD5c4UPefqr8VjIvqkE3el0WZt4jEP6hgM";
-
-$maps:( 
-	normal: $map-url + "center=19.431113,-99.1576105&zoom=18&size=1200x1400" + $key,
-	small: $map-url + "center=19.431113,-99.1576105&zoom=17&size=425x1200" + $key
-);
